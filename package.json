@@ -58,5 +58,5 @@
     "**/*.{json,ts}": [
       "prettier --write"
     ]
-  },
+  }
 }
