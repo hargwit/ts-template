@@ -11,7 +11,7 @@ jobs:
             - uses: actions/setup-node@v2
               with:
                   node-version: '17.x'
-            - run: npm ci
-            - run: npm run lint --if-present
-            - run: npm run test --if-present
-            - run: npm run build --if-present
+            - run: yarn install --lockfile
+            - run: yarn lint:check
+            - run: yarn test
+            - run: yarn build
