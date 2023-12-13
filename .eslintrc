@@ -15,10 +15,13 @@
     "rules": {
         "prettier/prettier": "error",
         "no-unused-vars": "off",
+        "@typescript-eslint/explicit-function-return-type": "error",
         "@typescript-eslint/no-unused-vars": [
             "error",
             {
-                "varsIgnorePattern": "_"
+                "varsIgnorePattern": "_",
+                "argsIgnorePattern": "_",
+                "ignoreRestSiblings": true
             }
         ]
     }
